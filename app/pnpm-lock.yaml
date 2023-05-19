@@ -2,16 +2,32 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.20.0
+  '@babel/preset-env': ^7.21.5
+  '@tanstack/react-query': ^4.29.7
+  '@trpc/client': ^10.27.0
+  '@trpc/react-query': ^10.27.0
+  '@trpc/server': ^10.27.0
+  '@types/react': ~18.0.27
   expo: ~48.0.15
   expo-status-bar: ~1.4.4
   react: 18.2.0
+  react-dom: 18.2.0
   react-native: 0.71.7
+  typescript: ^4.9.4
 
 dependencies:
+  '@babel/preset-env': 7.21.5_@babel+core@7.21.8
+  '@tanstack/react-query': 4.29.7_wbxhgwrghvbvmjgrhvps7i6tbi
+  '@trpc/client': 10.27.0_@trpc+server@10.27.0
+  '@trpc/react-query': 10.27.0_p5u3zyab3zkyjwd5bx5ooibutm
+  '@trpc/server': 10.27.0
+  '@types/react': 18.0.38
   expo: 48.0.17_@babel+core@7.21.8
   expo-status-bar: 1.4.4
   react: 18.2.0
-  react-native: 0.71.7_wn6zaaxe2xt3xsygjqv5uvr2am
+  react-dom: 18.2.0_react@18.2.0
+  react-native: 0.71.7_3ap3zwt6eikbjp3skxdjmrinky
+  typescript: 4.9.5
 
 devDependencies:
   '@babel/core': 7.21.8
@@ -2076,6 +2092,57 @@ packages:
       '@sinonjs/commons': 3.0.0
     dev: false
 
+  /@tanstack/query-core/4.29.7:
+    resolution: {integrity: sha512-GXG4b5hV2Loir+h2G+RXhJdoZhJLnrBWsuLB2r0qBRyhWuXq9w/dWxzvpP89H0UARlH6Mr9DiVj4SMtpkF/aUA==}
+    dev: false
+
+  /@tanstack/react-query/4.29.7_wbxhgwrghvbvmjgrhvps7i6tbi:
+    resolution: {integrity: sha512-ijBWEzAIo09fB1yd22slRZzprrZ5zMdWYzBnCg5qiXuFbH78uGN1qtGz8+Ed4MuhaPaYSD+hykn+QEKtQviEtg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@tanstack/query-core': 4.29.7
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-native: 0.71.7_3ap3zwt6eikbjp3skxdjmrinky
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /@trpc/client/10.27.0_@trpc+server@10.27.0:
+    resolution: {integrity: sha512-mOny2FZfvqkYuEZzx1WtGtYKIS8JVr7prr1xsiu0LJva2U2L1/Nfdbwhpxw+EOqLJwXkeRCMQAzQFQuFiJc0Mw==}
+    peerDependencies:
+      '@trpc/server': 10.27.0
+    dependencies:
+      '@trpc/server': 10.27.0
+    dev: false
+
+  /@trpc/react-query/10.27.0_p5u3zyab3zkyjwd5bx5ooibutm:
+    resolution: {integrity: sha512-OMJC0PqBJbX6hjt447CDUamDMTfNHAbs2UlI44LweopZrcyJWPKXgRJxI5r5SISv/Mu0qjpFP5OEj+C1liZz6g==}
+    peerDependencies:
+      '@tanstack/react-query': ^4.18.0
+      '@trpc/client': 10.27.0
+      '@trpc/server': 10.27.0
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@tanstack/react-query': 4.29.7_wbxhgwrghvbvmjgrhvps7i6tbi
+      '@trpc/client': 10.27.0_@trpc+server@10.27.0
+      '@trpc/server': 10.27.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@trpc/server/10.27.0:
+    resolution: {integrity: sha512-uXH75tFqmsMS/acOK8w8CoaJ2gE8MKZdqf9g5RolLRt8nKVW1P49D7bZF5BKtxev15Sz1vp8RInYk9xmFaiKUg==}
+    dev: false
+
   /@types/istanbul-lib-coverage/2.0.4:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
     dev: false
@@ -2094,6 +2161,22 @@ packages:
 
   /@types/node/20.2.1:
     resolution: {integrity: sha512-DqJociPbZP1lbZ5SQPk4oag6W7AyaGMO6gSfRwq3PWl4PXTwJpRQJhDq4W0kzrg3w6tJ1SwlvGZ5uKFHY13LIg==}
+    dev: false
+
+  /@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: false
+
+  /@types/react/18.0.38:
+    resolution: {integrity: sha512-ExsidLLSzYj4cvaQjGnQCk4HFfVT9+EZ9XZsQ8Hsrcn8QNgXtpZ3m9vSIC2MWtx7jHictK6wYhQgGh6ic58oOw==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.3
+      csstype: 3.1.2
+    dev: false
+
+  /@types/scheduler/0.16.3:
+    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
     dev: false
 
   /@types/stack-utils/2.0.1:
@@ -2999,6 +3082,10 @@ packages:
   /crypto-random-string/2.0.0:
     resolution: {integrity: sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==}
     engines: {node: '>=8'}
+    dev: false
+
+  /csstype/3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
     dev: false
 
   /dag-map/1.0.2:
@@ -4322,7 +4409,7 @@ packages:
     resolution: {integrity: sha512-rS46PvsjYmdmuz1OAWXY/1kCYG7pnf1TBqeTiOJr1iDz7s5DLxxC9n/ZMknLDxzYzNVfI7R95MH10emSSG1Wuw==}
     dev: false
 
-  /jscodeshift/0.13.1:
+  /jscodeshift/0.13.1_@babel+preset-env@7.21.5:
     resolution: {integrity: sha512-lGyiEbGOvmMRKgWk4vf+lUrCWO/8YR8sUR3FKF1Cq5fovjZDlIcw3Hu5ppLHAnEXshVffvaM0eyuY/AbOeYpnQ==}
     hasBin: true
     peerDependencies:
@@ -4334,6 +4421,7 @@ packages:
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6_@babel+core@7.21.8
       '@babel/plugin-proposal-optional-chaining': 7.21.0_@babel+core@7.21.8
       '@babel/plugin-transform-modules-commonjs': 7.21.5_@babel+core@7.21.8
+      '@babel/preset-env': 7.21.5_@babel+core@7.21.8
       '@babel/preset-flow': 7.21.4_@babel+core@7.21.8
       '@babel/preset-typescript': 7.21.5_@babel+core@7.21.8
       '@babel/register': 7.21.0_@babel+core@7.21.8
@@ -5600,6 +5688,16 @@ packages:
       - utf-8-validate
     dev: false
 
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -5612,12 +5710,12 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-native-codegen/0.71.5:
+  /react-native-codegen/0.71.5_@babel+preset-env@7.21.5:
     resolution: {integrity: sha512-rfsuc0zkuUuMjFnrT55I1mDZ+pBRp2zAiRwxck3m6qeGJBGK5OV5JH66eDQ4aa+3m0of316CqrJDRzVlYufzIg==}
     dependencies:
       '@babel/parser': 7.21.8
       flow-parser: 0.185.2
-      jscodeshift: 0.13.1
+      jscodeshift: 0.13.1_@babel+preset-env@7.21.5
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@babel/preset-env'
@@ -5628,7 +5726,7 @@ packages:
     resolution: {integrity: sha512-7F6bD7B8Xsn3JllxcwHhFcsl9aHIig47+3eN4IHFNqfLhZr++3ElDrcqfMzugM+niWbaMi7bJ0kAkAL8eCpdWg==}
     dev: false
 
-  /react-native/0.71.7_wn6zaaxe2xt3xsygjqv5uvr2am:
+  /react-native/0.71.7_3ap3zwt6eikbjp3skxdjmrinky:
     resolution: {integrity: sha512-Id6iRLS581fJMFGbBl1jP5uSmjExtGOvw5Gvh7694zISXjsRAsFMmU+izs0pyCLqDBoHK7y4BT7WGPGw693nYw==}
     engines: {node: '>=14'}
     hasBin: true
@@ -5660,7 +5758,7 @@ packages:
       promise: 8.3.0
       react: 18.2.0
       react-devtools-core: 4.27.8
-      react-native-codegen: 0.71.5
+      react-native-codegen: 0.71.5_@babel+preset-env@7.21.5
       react-native-gradle-plugin: 0.71.18
       react-refresh: 0.4.3
       react-shallow-renderer: 16.15.0_react@18.2.0
@@ -6574,6 +6672,12 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: false
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: false
 
   /ua-parser-js/0.7.35:
