@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "dev": "nodemon ./dist/main.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "authors": [
+    "Esaias Cronelius <esaias@cronelius.se>",
+    "Felix Bjerhem Aronsson <felix.b.aronsson@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
