@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { httpBatchLink } from '@trpc/client'
-import { StatusBar } from 'expo-status-bar'
 import { useState } from 'react'
 import IndexPage from '.'
 import { trpc } from './services/trpc'
@@ -20,7 +19,6 @@ export default function App() {
   return (
     <trpc.Provider client={trpcClient} queryClient={queryClient}>
       <QueryClientProvider client={queryClient}>
-        <StatusBar style='light' />
         <IndexPage />
       </QueryClientProvider>
     </trpc.Provider>

@@ -1,19 +1,12 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import MessageInput from './components/inputs/MessageInput'
-import { trpc } from './services/trpc'
+import MessageList from './components/messages/MessageList'
 
 const IndexPage = () => {
-  const { data } = trpc.hello.useQuery('world')
-
-  if (!data) return <Text>Loading...</Text>
-
   return (
     <View className='flex-1 bg-zinc-900'>
-      <View className='flex-1 items-center justify-center'>
-        <Text className='text-4xl font-bold text-white'>{data.message}</Text>
-      </View>
-
+      <MessageList />
       <MessageInput />
     </View>
   )
