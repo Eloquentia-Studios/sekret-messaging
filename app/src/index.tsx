@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
+import MessageInput from './components/inputs/MessageInput'
 import { trpc } from './services/trpc'
 
 const IndexPage = () => {
@@ -9,20 +9,14 @@ const IndexPage = () => {
   if (!data) return <Text>Loading...</Text>
 
   return (
-    <View style={styles.container}>
-      <Text>{data.message}</Text>
-      <StatusBar style='auto' />
+    <View className='flex-1 bg-zinc-900'>
+      <View className='flex-1 items-center justify-center'>
+        <Text className='text-4xl font-bold text-white'>{data.message}</Text>
+      </View>
+
+      <MessageInput />
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
 
 export default IndexPage
