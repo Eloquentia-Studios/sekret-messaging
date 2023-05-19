@@ -19,5 +19,9 @@
     "@types/node": "^20.2.1",
     "nodemon": "^2.0.22",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@trpc/server": "^10.27.0",
+    "zod": "^3.21.4"
   }
 }

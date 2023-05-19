@@ -1,9 +1,15 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@trpc/server': ^10.27.0
   '@types/node': ^20.2.1
   nodemon: ^2.0.22
   typescript: ^5.0.4
+  zod: ^3.21.4
+
+dependencies:
+  '@trpc/server': 10.27.0
+  zod: 3.21.4
 
 devDependencies:
   '@types/node': 20.2.1
@@ -11,6 +17,10 @@ devDependencies:
   typescript: 5.0.4
 
 packages:
+
+  /@trpc/server/10.27.0:
+    resolution: {integrity: sha512-uXH75tFqmsMS/acOK8w8CoaJ2gE8MKZdqf9g5RolLRt8nKVW1P49D7bZF5BKtxev15Sz1vp8RInYk9xmFaiKUg==}
+    dev: false
 
   /@types/node/20.2.1:
     resolution: {integrity: sha512-DqJociPbZP1lbZ5SQPk4oag6W7AyaGMO6gSfRwq3PWl4PXTwJpRQJhDq4W0kzrg3w6tJ1SwlvGZ5uKFHY13LIg==}
@@ -239,3 +249,7 @@ packages:
   /undefsafe/2.0.5:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
     dev: true
+
+  /zod/3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
